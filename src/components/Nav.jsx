@@ -31,7 +31,7 @@ export default function Nav() {
           </label>
           <Link to="/" className="">
             <img
-              src={`/assets/images/${mode ? "logo-light.svg" : "logo-dark.svg"}`}
+              src={`/assets/images/${!mode ? "logo-light.svg" : "logo-dark.svg"}`}
               alt="logo-light"
             />
           </Link>

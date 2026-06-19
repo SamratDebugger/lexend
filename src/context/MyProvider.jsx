@@ -6,9 +6,9 @@ export default function MyProvider({ children }) {
   const [mode, setMode] = useState(false);
   useEffect(() => {
     if (mode) {
-      document.documentElement.setAttribute("data-theme", "light");
+      document.documentElement.setAttribute("data-theme", "dark");
     } else {
-      document.documentElement.removeAttribute("data-theme");
+      document.documentElement.setAttribute("data-theme","light");
     }
   }, [mode]);
   const data = { mode, setMode };
